@@ -36,7 +36,7 @@ if ($_SESSION['status'] != 'login') {
                         <a class="nav-link" href="pelanggan.php"><i class="fas fa-users"></i> Pelanggan</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#"><i class="fas fa-money-check-alt"></i> Transaksi</a>
+                        <a class="nav-link" href="transaksi.php"><i class="fas fa-money-check-alt"></i> Transaksi</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#"><i class="fas fa-file-alt"></i> Laporan</a>
@@ -51,7 +51,7 @@ if ($_SESSION['status'] != 'login') {
                         </div>
                     </li>
                 </ul>
-                <ul class="navbar-nav mx-3">
+                <ul class="navbar-nav mx-lg-3">
                     <li class="nav-item text-white">Halo, <?= $_SESSION['username']; ?></li>
                 </ul>
                 <form class="form-inline">

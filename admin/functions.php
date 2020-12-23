@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost", "root", "", "anandazulvansyahputra");
+require '../koneksi.php';
 
 function showData($query)
 {

@@ -93,7 +93,7 @@ $pelanggan = showData("SELECT * FROM pelanggan");
                         }
                     }
                     ?>
-                    <h1><i class="fas fa-users"></i> Data Pelanggan</h1>
+                    <h2><i class="fas fa-users"></i> Data Pelanggan</h2>
                     <hr>
                     <!-- Button trigger modal insert data -->
                     <button type="button" class="btn btn-success mt-1 mb-3" data-toggle="modal" data-target="#insertData">
