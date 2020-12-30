@@ -7,8 +7,11 @@ require 'header.php';
         <div class="col-sm-10 m-auto">
             <div class="card mt-3">
                 <div class="card-body">
-                    <h2>Ubah Data Transaksi</h2>
-                    <a href="transaksi.php" class="btn btn-primary my-2">Kembali</a>
+                    <div class="heading d-flex justify-content-between">
+                        <h2>Ubah Data Transaksi</h2>
+                        <a href="transaksi.php" class="btn btn-primary my-2">Kembali</a>
+                    </div>
+
                     <?php
                     $id = $_GET['id'];
                     $dataTransaksi = mysqli_query($conn, "SELECT * FROM transaksi WHERE transaksi_id = '$id'");

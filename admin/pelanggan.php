@@ -103,6 +103,7 @@ $pelanggan = showData("SELECT * FROM pelanggan");
                     <table class="table table-bordered table-responsive-sm">
                         <thead class="thead-dark">
                             <tr>
+                                <th scope="col">No</th>
                                 <th scope="col">ID</th>
                                 <th scope="col">Nama</th>
                                 <th scope="col">No.HP</th>
@@ -111,9 +112,11 @@ $pelanggan = showData("SELECT * FROM pelanggan");
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($pelanggan as $p) : ?>
+                            <?php
+                            $no = 1;
+                            foreach ($pelanggan as $p) : ?>
                                 <tr>
-                                    <!-- untuk menampilkan nomor secara urut, tidak berdasarkan id di dalam database -->
+                                    <td><?= $no++; ?></td>
                                     <td><?= $p["pelanggan_id"]; ?></td>
                                     <td><?= $p["pelanggan_nama"];  ?></td>
                                     <td><?= $p["pelanggan_hp"];  ?></td>
@@ -202,10 +205,10 @@ $pelanggan = showData("SELECT * FROM pelanggan");
                 return $(this).text();
             }).get();
             console.log(data);
-            $('#editIDPelanggan').val(data[0]);
-            $('#editNamaPelanggan').val(data[1]);
-            $('#editNoHPPelanggan').val(data[2]);
-            $('#editAlamatPelanggan').val(data[3]);
+            $('#editIDPelanggan').val(data[1]);
+            $('#editNamaPelanggan').val(data[2]);
+            $('#editNoHPPelanggan').val(data[3]);
+            $('#editAlamatPelanggan').val(data[4]);
         });
 
         $('.deleteData').on('click', function() {
@@ -217,7 +220,7 @@ $pelanggan = showData("SELECT * FROM pelanggan");
                 return $(this).text();
             }).get();
             console.log(data);
-            $('#IDPelanggan').val(data[0]);
+            $('#IDPelanggan').val(data[1]);
         });
     });
 </script>

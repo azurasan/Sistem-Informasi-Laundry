@@ -159,7 +159,7 @@ $pakaian = showData("SELECT * FROM pakaian");
                                         ?>
                                     </td>
                                     <td>
-                                        <a href="#" class="btn btn-info">INVOICE</a>
+                                        <a href="transaksi_invoice.php?id=<?= $t['transaksi_id']; ?>" class="btn btn-info invoice">INVOICE</a>
                                         <a href="transaksi_edit.php?id=<?= $t['transaksi_id']; ?>" class="btn btn-primary editBtn">Ubah</a>
                                         <button class="btn btn-danger deleteData" data-toggle="modal" data-target="#deleteModal">Hapus</button>
                                     </td>
