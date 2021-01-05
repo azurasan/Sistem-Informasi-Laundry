@@ -38,7 +38,6 @@ require 'header.php'
                             <th>Pelanggan</th>
                             <th>Berat (kg)</th>
                             <th>Harga</th>
-                            <th>Status</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -54,18 +53,7 @@ require 'header.php'
                                 <td><?= $d['transaksi_tgl_selesai']; ?></td>
                                 <td><?= $d['pelanggan_nama']; ?></td>
                                 <td><?= $d['transaksi_berat']; ?></td>
-                                <td><?= $d['transaksi_harga']; ?></td>
-                                <td>
-                                    <?php
-                                    if ($d['transaksi_status'] == "0") {
-                                        echo '<span class="badge badge-warning">PROSES</span>';
-                                    } else if ($d['transaksi_status'] == "1") {
-                                        echo '<span class="badge badge-primary">DICUCI</span>';
-                                    } else if ($d['transaksi_status'] == "2") {
-                                        echo '<span class="badge badge-success">SELESAI</span>';
-                                    }
-                                    ?>
-                                </td>
+                                <td>Rp.<?= $d['transaksi_harga']; ?>,-</td>
                             </tr>
                         <?php } ?>
                     </tbody>

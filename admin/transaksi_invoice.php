@@ -48,7 +48,7 @@ require 'header.php';
                         <td>:</td>
                         <td><?= $t['transaksi_berat']; ?></td>
                     </tr>
-                    <tr>
+                    <!-- <tr>
                         <th>Status</th>
                         <td>:</td>
                         <td>
@@ -62,7 +62,7 @@ require 'header.php';
                             }
                             ?>
                         </td>
-                    </tr>
+                    </tr> -->
                     <tr>
                         <th>Harga</th>
                         <td>:</td>
