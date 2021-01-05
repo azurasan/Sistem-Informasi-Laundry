@@ -1,12 +1,8 @@
 <?php
-error_reporting(0);
 require 'header.php';
 require 'functions.php';
-// $transaksi = showData("SELECT * FROM pelanggan,transaksi WHERE transaksi_pelanggan=pelanggan_id ORDER BY transaksi_id DESC");
-// var_dump($transaksi);
 echo '<br>';
 $pakaian = showData("SELECT * FROM pakaian");
-// var_dump($pakaian);
 ?>
 <div class="container">
     <div class="row">
@@ -207,8 +203,8 @@ $pakaian = showData("SELECT * FROM pakaian");
         let data = $tr.children('td').map(function() {
             return $(this).text();
         }).get();
-        console.log(data);
-        let idTransaksi = data[1].slice(-1);
+        console.log(data[1]);
+        let idTransaksi = data[1].length == 9 ? data[1].slice(-1) : data[1].slice(-2);
         console.log(idTransaksi);
         $('#IDTransaksi').val(idTransaksi);
     });
