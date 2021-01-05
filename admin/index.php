@@ -57,7 +57,7 @@ require 'header.php';
                                     <h2><i class="fas fa-check-circle"></i></h2>
                                     <h2>
                                         <?php
-                                        $proses = mysqli_query($conn, "SELECT * FROM transaksi WHERE transaksi_status = '1'");
+                                        $proses = mysqli_query($conn, "SELECT * FROM transaksi WHERE transaksi_status = '2'");
                                         ?>
                                         <?= mysqli_num_rows($proses); ?>
                                     </h2>
