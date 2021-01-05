@@ -1,8 +1,7 @@
 <?php
 require 'header.php';
 require 'functions.php';
-$harga = showData("SELECT harga_per_kilo FROM harga")[0];
-// echo $harga;
+
 ?>
 <div class="container">
     <div class="row justify-content-center">
@@ -22,13 +21,19 @@ $harga = showData("SELECT harga_per_kilo FROM harga")[0];
             <div class="card">
                 <div class="card-body">
                     <h4><i class="fas fa-dollar-sign"></i> Ubah Harga</h4>
-                    <form action="harga_update.php" method="post">
-                        <div class="form-group">
-                            <label for="ChangePrice">Harga Per Kilo</label>
-                            <input type="number" class="form-control" id="ChangePrice" name="harga" value="<?= $harga['harga_per_kilo']; ?>">
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100" name="ubahHarga">Ubah Harga</button>
-                    </form>
+                    <?php
+                    $harga = mysqli_query($conn, "SELECT harga_per_kilo FROM harga");
+                    while ($h = mysqli_fetch_array($harga)) {
+                    ?>
+
+                        <form action="harga_update.php" method="post">
+                            <div class="form-group">
+                                <label for="ChangePrice">Harga Per Kilo</label>
+                                <input type="number" class="form-control" id="ChangePrice" name="harga" value="<?= $h['harga_per_kilo']; ?>">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100" name="ubahHarga">Ubah Harga</button>
+                        </form>
+                    <?php } ?>
                 </div>
             </div>
         </div>
