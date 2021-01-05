@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <style>
+        body {
+            background-image: url(assets/img/laundry.jpg);
+        }
+    </style>
 </head>
 
 <body>
@@ -28,19 +33,19 @@
                 }
             }
             ?>
-            <h1 class="my-2 mb-4 text-center">Sistem Informasi Laundry</h1>
 
-            <form class="col-lg-3 bg-success text-light p-4 rounded" action="login.php" method="POST">
+
+            <form class="col-lg-3 bg-light text-dark p-4 rounded border border-dark" action="login.php" method="POST">
+                <h3 class="text-center mb-5">Login Page</h3>
                 <div class="form-group">
-                    <label for="exampleInput">Username</label>
-                    <input type="text" class="form-control" id="exampleInput" aria-describedby="emailHelp" name="username" autocomplete="off">
+                    <input type="text" class="form-control" id="exampleInput" placeholder="Username" name="username" autocomplete="off">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" name="password" autocomplete="off">
+                    <input type="password" class="form-control" id="exampleInputPassword1" name="password" autocomplete="off" placeholder="Password">
                 </div>
                 <button type="submit" class="btn btn-primary w-100 mt-1">Login</button>
             </form>
+            <span class="fixed-bottom text-white ml-3">Photo by <a href="https://unsplash.com/@biancajordan?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="blank">Bianca Jordan</a> on <a href="https://unsplash.com/s/photos/laundry?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="blank">Unsplash</a></span>
         </div>
     </div>
     <script src="assets/js/jquery.js"></script>
