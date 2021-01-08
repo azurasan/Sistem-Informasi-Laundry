@@ -13,4 +13,18 @@ Bootstrap  4.5    : https://getbootstrap.com/docs/4.5/getting-started/introducti
 
 FontAwesome       : https://fontawesome.com/
 
+Fitur :
 
+- Login
+
+- Kelola data pelanggan
+
+- Kelola data transaksi
+
+- Kelola data pakaian
+
+- Cetak Invoice Transaksi
+
+- Filter Laporan
+
+- Cetak Laporan
