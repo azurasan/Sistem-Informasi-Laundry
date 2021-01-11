@@ -45,7 +45,10 @@
                 </div>
                 <button type="submit" class="btn btn-primary w-100 mt-1">Login</button>
             </form>
-            <span class="fixed-bottom text-white ml-3">Photo by <a href="https://unsplash.com/@biancajordan?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="blank">Bianca Jordan</a> on <a href="https://unsplash.com/s/photos/laundry?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="blank">Unsplash</a></span>
+            <footer class="fixed-bottom min-vw-100 text-white d-flex justify-content-between">
+                <h5 class="pl-2">Photo by <a href="https://unsplash.com/@biancajordan?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="blank" class="text-danger">Bianca Jordan</a> on <a href="https://unsplash.com/s/photos/laundry?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="blank" class="text-danger">Unsplash</a></h5>
+                <h3 class="text-warning pr-2">Ananda Zulvansyah Putra</h3>
+            </footer>
         </div>
     </div>
     <script src="assets/js/jquery.js"></script>
