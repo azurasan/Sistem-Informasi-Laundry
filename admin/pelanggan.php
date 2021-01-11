@@ -222,6 +222,8 @@ $pelanggan = showData("SELECT * FROM pelanggan");
             console.log(data);
             $('#IDPelanggan').val(data[1]);
         });
+
+        $('.table').DataTable();
     });
 </script>
 <?php require 'footer.php'; ?>

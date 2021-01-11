@@ -4,7 +4,7 @@ require 'functions.php';
 echo '<br>';
 $pakaian = showData("SELECT * FROM pakaian");
 ?>
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col-sm-12">
             <div class="card mt-3">
@@ -155,7 +155,7 @@ $pakaian = showData("SELECT * FROM pakaian");
                                         ?>
                                     </td>
                                     <td>
-                                        <a href="transaksi_invoice.php?id=<?= $t['transaksi_id']; ?>" class="btn btn-info invoice">INVOICE</a>
+                                        <a href="transaksi_invoice.php?id=<?= $t['transaksi_id']; ?>" class="btn btn-info invoice">Invoice</a>
                                         <a href="transaksi_edit.php?id=<?= $t['transaksi_id']; ?>" class="btn btn-primary editBtn">Ubah</a>
                                         <button class="btn btn-danger deleteData" data-toggle="modal" data-target="#deleteModal">Hapus</button>
                                     </td>
@@ -164,7 +164,7 @@ $pakaian = showData("SELECT * FROM pakaian");
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="deleteModalLabel">Hapus Data Pelanggan</h5>
+                                                    <h5 class="modal-title" id="deleteModalLabel">Hapus Data Transaksi</h5>
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
@@ -208,5 +208,7 @@ $pakaian = showData("SELECT * FROM pakaian");
         console.log(idTransaksi);
         $('#IDTransaksi').val(idTransaksi);
     });
+
+    $('.table').DataTable();
 </script>
 <?php require 'footer.php'; ?>

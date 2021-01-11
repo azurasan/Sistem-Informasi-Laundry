@@ -13,8 +13,12 @@ if ($_SESSION['status'] != 'login') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistem Informasi Laundry</title>
+    <!-- Bootstrap 4 -->
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <!-- Icon -->
     <link rel="shortcut icon" href="../assets\flaticon\washing-machine.png" type="image/x-icon">
+    <!-- Data Table -->
+    <link rel="stylesheet" type="text/css" href="../assets/datatable/datatables.min.css" />
 </head>
 
 <body>
@@ -65,6 +69,7 @@ if ($_SESSION['status'] != 'login') {
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/popper.min.js"></script>
     <script src="../assets/fontawesome/js/all.min.js"></script>
+    <script type="text/javascript" src="../assets/datatable/datatables.min.js"></script>
 </body>
 
 </html>
